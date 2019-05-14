@@ -1,0 +1,23 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<div class="topnav">
+  <a routerLink="/search">Search Skill set</a>
+  <a routerLink="/update" *ngIf="loggedIn">Update Skill set</a>
+  <a routerLink="/login" *ngIf="!loggedIn">Login</a>
+  <a routerLink="/credits">Credits</a>
+  <div class="dropdown" style="float: right;">
+    <button type="submit" class="btn dropbtn">
+      G Surendar Thina
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Logout</a>
+    </div>
+  </div>
+</div>
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+</div>
+<router-outlet></router-outlet>
+<!-- <app-messages></app-messages> -->

@@ -1,0 +1,63 @@
+<div>
+
+  <select *ngIf="!skill">
+  	<option>Skill 1</option>
+  	<option>Skill 2</option>
+  	<option>Skill 3</option>
+  	<option>Skill 4</option>
+  </select>
+
+  <select *ngIf="!skill">
+  	<option>Beginner</option>
+  	<option>Moderate</option>
+  	<option>Advanced</option>
+  	<option>Pro</option>
+  </select>
+
+  <button type="submit" class="btn btn-success"><i class="fa fa-check"></i></button>
+
+
+</div>
+
+<div>
+	Can't find your Skill? 
+	<input [(ngModel)]="skill" type="text" placeholder="Add New.." name="search">
+  	<button type="submit" class="btn btn-success"><i class="fa fa-plus"></i></button>
+
+</div>
+
+
+<div>
+
+	<table>
+		<tr>
+			<th>Select</th>
+			<th>Skill Name</th>
+			<th>Expertise</th>
+			<th>Last updated</th>
+			<th>Actions</th>
+		</tr>
+		<tr>
+			<input type="checkbox" name="check">
+			<td>Skill 1</td>
+			<td>Beginner</td>
+			<td>4th July, 2019</td>
+			<td><i class="fa fa-edit"></i><i class="fa fa-times"></i></td>
+		</tr>
+		<tr>
+			<input type="checkbox" name="check">
+			<td>Skill 2</td>
+			<td>Moderate</td>
+			<td>27th March, 2017</td>
+			<td><i class="fa fa-edit"></i><i class="fa fa-times"></i></td>
+		</tr>
+		<tr>
+			<input type="checkbox" name="check">
+			<td>Skill 3</td>
+			<td>Pro</td>
+			<td>14th Jan, 2018</td>
+			<td><i class="fa fa-edit"></i><i class="fa fa-times"></i></td>
+		</tr>
+	</table>
+
+</div>

@@ -1,0 +1,19 @@
+<div>
+  <input [(ngModel)]="query" type="text" placeholder="Search.." name="search">
+
+  <select *ngIf="!query">
+  	<option>Skill 1</option>
+  	<option>Skill 2</option>
+  	<option>Skill 3</option>
+  	<option>Skill 4</option>
+  </select>
+
+  <select *ngIf="!query">
+  	<option>Location 1</option>
+  	<option>Location 2</option>
+  	<option>Location 3</option>
+  	<option>Location 4</option>
+  </select>
+
+  <button type="submit" class="btn btn-success"><i class="fa fa-search"></i></button>
+</div>
